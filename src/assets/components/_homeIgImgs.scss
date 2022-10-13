@@ -1,0 +1,85 @@
+.img-style {
+  width: 100%;
+  height: 100%;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+}
+
+// hover 動畫
+.text-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  color: #004c34;
+  background-color: #fbf8f6;
+  opacity: 0;
+  transition: all 0.5s ease;
+  border: 1px solid #004c34;
+  border-radius: 0.5rem;
+}
+
+.text-overlay span:nth-child(1) {
+  position: absolute;
+  left: 49%;
+  top: 50%;
+  font-size: 12px;
+  transform: translateX(-50%);
+  @include desktops {
+    left: 50%;
+    font-size: 17px;
+  }
+}
+
+.text-overlay span:nth-child(2) {
+  height: 3px;
+  position: absolute;
+  top: 64%;
+  left: 0;
+  background-color: #004c34;
+}
+
+.text-overlay:hover {
+  opacity: 0.93;
+}
+
+.text-overlay:hover span:nth-child(1) {
+  animation: slide 0.7s;
+}
+
+.text-overlay:hover span:nth-child(2) {
+  animation: line 0.5s forwards;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes line {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+.w-iframe {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 490px;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

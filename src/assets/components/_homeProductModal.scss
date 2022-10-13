@@ -1,0 +1,49 @@
+/* 圖片 */
+.card-content {
+  text-align: center;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: -55px;
+  z-index: 1;
+}
+
+.card-image {
+  transition: transform 1.5s ease;
+  z-index: 0;
+}
+
+.card-image:hover {
+  transform: scale(1.1);
+  z-index: 0;
+}
+.card-content:hover .card-image {
+  transform: scale(1.2);
+  z-index: 0;
+}
+
+/* 按鈕 */
+.btn-ribbon {
+  position: relative;
+  cursor: pointer;
+  width: 80%;
+}
+
+.btn-ribbon.ribbon:before {
+  border-color: #004c34 #004c34 #004c34 transparent;
+  left: -15px;
+  border-width: 10px;
+}
+
+.btn-ribbon.ribbon:after {
+  border-color: #004c34 transparent #004c34 #004c34;
+  right: -15px;
+  border-width: 10px;
+}
+
+.btn-ribbon:before,
+.btn-ribbon:after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  border-style: solid;
+}

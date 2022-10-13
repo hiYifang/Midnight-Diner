@@ -1,0 +1,25 @@
+// 斷點
+// 小於 280px
+@mixin mobile-281{
+  @media(min-width: 281px){
+    @content;
+  }
+}
+// Small devices (landscape phones, 576px and up)
+@mixin mobile{
+  @media(min-width: 576px){
+    @content;
+  }
+}
+// Medium devices (tablets, 768px and up)
+@mixin pad {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+// Large devices (desktops, 992px and up)
+@mixin desktops {
+  @media (min-width: 992px) {
+    @content;
+  }
+}

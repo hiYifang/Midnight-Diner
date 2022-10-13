@@ -1,0 +1,18 @@
+// Home.vue、Foods.vue
+.bg-opacity {
+  background-color: rgba($dark, 0.6);
+  // 設置背景混和模式為相乘模式
+  background-blend-mode: multiply;
+}
+
+// Home.vue、Foods.vue
+.bg-cover {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+// Food.vue - Navs and tabs
+.bg-white-opacity-80 {
+  background-color: rgba($white, 0.8);
+}

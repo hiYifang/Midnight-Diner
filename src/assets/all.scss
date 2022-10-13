@@ -1,0 +1,22 @@
+// 1.
+@import "~bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "./helpers/mixin";
+@import "./helpers/utilities";
+
+// 2. Include all of Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// 自訂字體
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200&display=swap');
+@import "./helpers/base";
+// 自訂樣式
+@import "./helpers/util";
+// 元件樣式
+@import "./components/homeNavbarMb";
+@import "./components/homeNavbar";
+@import "./components/switch";
+// 頁面樣式
+@import "./pages/home";
+@import './pages/foods';
+@import "./pages/checkout";

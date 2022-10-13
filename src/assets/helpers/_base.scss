@@ -1,0 +1,18 @@
+:root {
+  // 自訂字體
+  --bs-font-sans-serif: system-ui, -apple-system, "Noto Serif TC", "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  // 自訂間距
+  --gutter-custom: 20px;
+}
+
+// 直書且由右到左
+.text-writing {
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+}
+
+.text-smaller {
+  font-size: 14px;
+}

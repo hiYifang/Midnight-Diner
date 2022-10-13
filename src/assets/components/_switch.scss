@@ -1,0 +1,55 @@
+$primary: #004C34;
+$secondary: #BE9C6D;
+$light: #FBF8F6;
+$dark: #000000;
+$danger: #dc3545;
+
+.switch-field {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+input.switch {
+  position: absolute;
+  visibility: hidden;
+}
+
+input.switch + label {
+  width: 3rem;
+  height: 1.5rem;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  border: 1px solid rgba($primary, 0.3);
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+
+input.switch + label:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba($secondary, 0.3);
+  border-radius: 1.5rem;
+}
+
+input.switch + label:after {
+  content: "";
+  width: 1.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: $danger;
+  border-radius: 1.5rem;
+  transition: margin 0.3s;
+}
+
+input.switch:checked + label:after {
+  margin-left: 1.5rem;
+  padding: 10px 0;
+  background-color: $primary;
+}
